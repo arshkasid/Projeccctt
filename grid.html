@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length };
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+    </script>
+<style>
+
+    img{
+        width: 100px;
+        height: 100px;
+    }
+</style>
+</head>
+<body>
+<img class="mySlides" src="./Screenshot 2022-02-11 at 3.58.10 PM.png">
+<img class="mySlides" src="./pexels-singkham-1108572.jpg">
+<img class="mySlides" src="./pexels-pixabay-87009.jpg">
+<img class="mySlides" src="./pexels-pixabay-220201.jpg">
+
+<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+</div>
+</body>
+</html>

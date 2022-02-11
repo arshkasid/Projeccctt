@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart and Green cities</title>
+    
+    
+    <style>
+        html{
+         
+            background-image: url(./pexels-aleksejs-bergmanis-681335.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        body{
+            font-family: 'Roboto Mono', monospace;
+font-family: 'Shizuru', cursive;
+
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+    nav ul{
+        display: flex;
+        /* border: 2px solid red;  */
+        list-style: none;
+        /* background-color:black; */
+        color:antiquewhite;
+        width: 100%;
+        height:100px;
+        /* position: fixed; */
+        margin-bottom:50px;
+    
+        background-image: linear-gradient(#02aab0,#00cdac);
+        border-radius:10px;
+        
+    
+    }
+    nav ul li{
+        display: inline-block;
+        margin: 20px;
+        padding: 20px;
+        
+      
+
+    }
+   
+    nav ul li:hover{
+        background-color: black;
+        color: gold;
+        cursor:grab;
+    }
+    .gridcontainer{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+      
+    }
+    .griditem{
+        color: yellow;
+        height: 100vh;
+        width: 100%;
+        border: 2px solid blue;
+    }
+    #image_1{
+       display: flex;
+       align-items: center;
+       border: 2px solid red;
+       justify-content: center;
+    }
+   #bulb{
+       width:100%;
+   }
+   table{
+     border: 2px solid yellow;
+     margin: 20px;
+     
+   }
+   th{
+       padding: 50px;
+   }
+   
+   
+    
+  
+    </style>
+</head>
+<body>  
+    <!-- nav bar -->
+<nav id="navbar">
+    <ul>
+        <li>HOME</li>
+        <li>GREEN ID</li>
+        <li>PRODUCTS</li>
+        <li>RENEWABLE ENERGY</li>
+        <li>LOGIN/SIGN UP</li>
+        <li>Serach bar<input type="search" name="search here" id="serachbar_1"> </li>
+        <li> <img src="./gilogo-1white.png" alt="" height="50x " width="50px" >  </li>
+    </ul>
+<nav>
+    <!-- nav bar ends here -->
+
+    <!-- container starts here -->
+
+<div class="gridcontainer">
+    <!-- gird item 1 starts -->
+
+ <div class="griditem" id="griditem1">
+    <table>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <td>LOREM</td>
+            <td>LOREM</td>
+            <td>LOREM</td>
+        </tr>
+        <tr>
+            <td>LOREM</td>
+            <td>LOREM</td>
+            <td>LOREM</td>
+        </tr>
+        <tr>
+            <td>lorem</td>
+            <td>lorem</td>
+            <td>lorem</td>
+        </tr>
+       
+
+    </table>    
+</div>
+    <!-- grid item 1 ends -->
+
+ <!-- grid item 2 -->
+ <div class="griditem" id="griditem2">
+     <div id="image_1">
+         <img src="./pexels-singkham-1108572.jpg" alt="a bulb" id="bulb">
+     </div>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae error asperiores iure! Ullam recusandae id ex nihil omnis corporis esse atque inventore quam consequatur natus, aspernatur doloribus exercitationem veniam facere quaerat pariatur neque magnam tempora minus quas placeat ratione reiciendis aliquam. Aliquid ea commodi necessitatibus quis dignissimos rerum libero natus!</p>
+    
+     </div>
+ </div>
+
+<!-- grid item 2 ends -->
+ <div  class="griditem"id="griditem3">3</div>
+</div>
+<!-- container ends here -->
+
+</body>
+</html>
